@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Registro de Miembros</h1>
+        <nav>
+    <a href="/">Home</a>
+    <a href="/workouts">Entrenamientos</a>
+    <a href="/signup">Registro</a>
+    <a href="/profile">Perfil</a>  
+</nav>
+
+    </div>
+</header>
+
+<main class="signup">
+    <h2>Únete a nuestra comunidad</h2>
+    <form action="/signup" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="name" required><br>
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+        <button type="submit">Registrarse</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Crossfit Elite</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Personalizado</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Perfil Personalizado</h1>
+        <nav>
+    <a href="/">Home</a>
+    <a href="/workouts">Entrenamientos</a>
+    <a href="/signup">Registro</a>
+    <a href="/profile">Perfil</a>  
+</nav>
+
+    </div>
+</header>
+
+<main class="signup">
+    <h2>Ingresa tus datos para rutinas personalizadas</h2>
+    <form action="/profile" method="POST">
+        <label>Nombre:</label><br>
+        <input type="text" name="name" required><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="age" required><br>
+
+        <label>Peso (kg):</label><br>
+        <input type="number" name="weight" required><br>
+
+        <label>Estatura (cm):</label><br>
+        <input type="number" name="height" required><br>
+
+        <label>¿Tienes alguna lesión o condición especial?</label><br>
+        <textarea name="condition" rows="4" cols="50" placeholder="Escribe aquí cualquier condición o dolor"></textarea><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Crossfit Elite</p>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
