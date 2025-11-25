@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rutina Personalizada</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Rutina Personalizada</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/workouts">Entrenamientos</a>
+            <a href="/signup">Registro</a>
+            <a href="/profile">Perfil</a>
+        </nav>
+    </div>
+</header>
+
+<main class="profile-result">
+    <h2>Gracias, <%= name %></h2>
+    <p><strong>Edad:</strong> <%= age %> años</p>
+    <p><strong>Peso:</strong> <%= weight %> kg</p>
+    <p><strong>Estatura:</strong> <%= height %> cm</p>
+    <p><strong>Condición especial:</strong> <%= condition %></p>
+
+    <h2>Tu rutina recomendada:</h2>
+    <ul>
+        <% rutina.forEach(function(ejercicio){ %>
+            <li><%= ejercicio %></li>
+        <% }); %>
+    </ul>
+
+    <a href="/">Volver al inicio</a>
+</main>
+
+<footer>
+    <p>&copy; 2025 Crossfit Elite</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
